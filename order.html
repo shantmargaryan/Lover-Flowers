@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Lover Flowers</title>
+    <link rel="stylesheet" href="css/reapet-styles/reapet-styles.css">
+    <link rel="stylesheet" href="css/style/order.css">
+</head>
+
+<body class="page__body">
+    <!-- header start -->
+    <special-header></special-header>
+    <!-- header end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- order start -->
+        <section class="order">
+            <div class="order__container container">
+                <img class="order__img order__img_left img" src="images/side-rose.png" alt="rose">
+                <div class="order__links">
+                    <a class="order__link link" href="index.html">
+                        Главная
+                    </a>
+                    <a class="order__link link" href="order.html">
+                        оформление заказа
+                    </a>
+                </div>
+                <img class="order__img order__img_right img" src="images/side-rose.png" alt="rose" loading="lazy">
+                <h1 class="order__title title-important">
+                    оформление заказа
+                </h1>
+                <h2 class="order__small-title title">
+                    Оформление заказа
+                </h2>
+                <span class="order__subtitle">
+                    Контактные данные
+                </span>
+                <div class="order__wrapper">
+                    <form id="form" class="form" method="post">
+                        <input type="hidden" name="access_key" value="9d8b7267-8669-4d02-b1b6-5b0c899451b4">
+                        <div class="form__label-group">
+                            <label class="form__label">
+                                Ваше имя*
+                                <input class="form__input input-reset" name="name" required type="text"
+                                    placeholder="Введите ваше имя">
+                            </label>
+                            <label class="form__label">
+                                Ваш телефон*
+                                <input class="form__input input-reset" name="tel" required type="tel"
+                                    placeholder="+7 (977) 777-77-77">
+                            </label>
+                            <label class="form__label">
+                                Ваш e-mail*
+                                <input class="form__input input-reset" name="email" required type="email"
+                                    placeholder="Ваш e-mail*">
+                            </label>
+                            <label class="form__label">
+                                Телефон получателя (необязательно)
+                                <input class="form__input input-reset" name="tel" required type="tel"
+                                    placeholder="+7 (977) 777-77-77">
+                            </label>
+                            <label class="form__label">
+                                Имя получателя (необязательно)
+                                <input class="form__input input-reset" name="name" required type="tel"
+                                    placeholder="Введите имя получателя">
+                            </label>
+                            <label class="form__label">
+                                Комментарий к заказу
+                                <input class="form__input input-reset" name="text" required type="text"
+                                    placeholder="Примечания к вашеу заказу,  особые пожелания отделу доставки">
+                            </label>
+                        </div>
+                        <span class="form__subtitle">
+                            Доставка
+                        </span>
+                        <div class="form__radio-tab">
+                            <input id="seven" class="form__radio" type="radio" name="payment-type">
+                            <label id="input-seven" for="seven" class="form__payment-label">
+                                Самовывоз
+                            </label>
+                        </div>
+                        <div class="form__radio-tab">
+                            <input id="eight" class="form__radio" type="radio" name="payment-type">
+                            <label id="input-eight" for="eight" class="form__payment-label">
+                                Доставка курьером
+                            </label>
+                        </div>
+                        <div class="select" data-select="select">
+                            <span class="select__title">
+                                Выберите город
+                            </span>
+                            <button class="select-btn">Выберите город</button>
+                            <ul class="select-list list-reset">
+                                <li class="select-item">
+                                    <button class="select-option button-reset" data-select-value="html">
+                                        Москва
+                                    </button>
+                                </li>
+                                <li class="select-item">
+                                    <button class="select-option button-reset" data-select-value="css">
+                                        Санкт-Петербург
+                                    </button>
+                                </li>
+                                <li class="select-item">
+                                    <button class="select-option button-reset" data-select-value="html">
+                                        Новосибирск
+                                    </button>
+                                </li>
+                                <li class="select-item">
+                                    <button class="select-option button-reset" data-select-value="css">
+                                        Екатеринбург
+                                    </button>
+                                </li>
+                                <li class="select-item">
+                                    <button class="select-option button-reset" data-select-value="js">
+                                        Нижний Новгород
+                                    </button>
+                                </li>
+                            </ul>
+                            <input class="select-input" name="select-input" type="text">
+                        </div>
+                        <label class="form__label">
+                            Улица*
+                            <input class="form__input input-reset" type="text" name="text" placeholder="Введите улицу">
+                        </label>
+                        <div class="form__input-box">
+                            <label class="form__address-label">
+                                Корп/стр
+                                <input class="form__address-input input-reset" type="text" name="text"
+                                    placeholder="Корп/стр">
+                            </label>
+                            <label class="form__address-label">
+                                Дом
+                                <input class="form__address-input input-reset" type="text" name="text"
+                                    placeholder="Дом">
+                            </label>
+                            <label class="form__address-label">
+                                Кв/офис
+                                <input class="form__address-input input-reset" type="text" name="text"
+                                    placeholder="Кв/офис">
+                            </label>
+                        </div>
+                        <label class="form__delivery-label">
+                            Время доставки
+                            <input class="form__delivery-input input-reset" type="number" name="number"
+                                placeholder="__/__">
+                        </label>
+                        <span class="form__delivery-cost">
+                            Стоимость доставки 0 ₽
+                        </span>
+                        <div class="form__payment">
+                            <span class="form__payment-text">
+                                Оплата
+                            </span>
+                            <div class="form__radio-tab">
+                                <input id="one" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-one" for="one" class="form__payment-label">
+                                    Банковская карта
+                                </label>
+                            </div>
+                            <div class="form__radio-tab">
+                                <input id="two" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-two" for="two" class="form__payment-label">
+                                    Наличными
+                                </label>
+                            </div>
+                            <div class="form__radio-tab">
+                                <input id="three" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-three" for="three" class="form__payment-label">
+                                    Apple pay
+                                </label>
+                            </div>
+                            <div class="form__radio-tab">
+                                <input id="four" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-four" for="four" class="form__payment-label">
+                                    Google pay
+                                </label>
+                            </div>
+                            <div class="form__radio-tab">
+                                <input id="five" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-five" for="five" class="form__payment-label">
+                                    Криптовалюта
+                                </label>
+                            </div>
+                            <div class="form__radio-tab">
+                                <input id="six" class="form__radio" type="radio" name="payment-type">
+                                <label id="input-six" for="six" class="form__payment-label">
+                                    С расчетного счета
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__promo-box">
+                            <span class="form__promo-text">
+                                Промокод
+                            </span>
+                            <div class="form__promo-buttons">
+                                <input class="form__promo-input input-reset" type="text" placeholder="Промокод">
+                                <button class="form__promo-button button-reset" type="button">
+                                    Применить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form__result">
+                            <div class="form__result-box">
+                                <span class="form__result-text">
+                                    Общая сумма заказа
+                                </span>
+                                <span class="form__result-price">
+                                    0 ₽
+                                </span>
+                            </div>
+                            <span class="form__Discount">
+                                Скидка = 0 ₽
+                            </span>
+                            <span class="form__Shipping">
+                                Доставка = 0 ₽
+                            </span>
+                            <button class="form__pay button-reset" type="submit">
+                                К оплате
+                            </button>
+                            <p class="form__pay-text text">
+                                Нажимая на кнопку «К Оплате», я даю свое согласие на обработку персональных данных, в
+                                соответствии с а так же ознакомлен с <a class="form__pay-link link" href="#">
+                                    Политикой конфиденциальности
+                                </a> условиями оплаты и доставки
+                            </p>
+                        </div>
+                        <div id="result"></div>
+                    </form>
+                    <div class="order__box">
+                        <span class="order__subtitle order__subtitle_cart">
+                            Ваш заказ:
+                        </span>
+                        <div class="order__cart-box">
+                            <img class="order__cart-img img" src="images/flowes-bowl.png" alt="flowes">
+                            <div class="order__cart-protuct-count">
+                                <span class="order__cart-protuct">
+                                    рубиновые искры
+                                </span>
+                                <div class="order__cart-quantity" data-quantity>
+                                    <span class="order__cart-minus count" data-minus>-</span>
+                                    <span class="order__cart-num count" data-num>0</span>
+                                    <span class="order__cart-plus count" data-plus>+</span>
+                                </div>
+                            </div>
+                            <div class="order__cart-protuct-price-box">
+                                <span class="order__cart-protuct-price">
+                                    167.00 ₽
+                                </span>
+                                <button class="order__cart-protuct-delete button-reset" data-delete>
+                                    Удалить
+                                </button>
+                            </div>
+                        </div>
+                        <p class="order__final-price text">
+                            Предварительный итог:
+                            <span class="order__final-price-text">
+                                334.00 руб.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- order end -->
+    </main>
+
+    <!-- footer start -->
+    <special-footer></special-footer>
+    <!-- footer.html -->
+
+    <script src="js/headerFooter.js"></script>
+    <script src="js/renderProducts.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/customSelect.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

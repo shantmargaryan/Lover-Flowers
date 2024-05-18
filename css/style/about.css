@@ -1,0 +1,165 @@
+/* about start */
+
+.about {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 10%;
+}
+
+.about__container {}
+
+.about__link-box {
+    margin-bottom: 50px;
+}
+
+.about__link {
+    color: #fff;
+    font-weight: 400;
+}
+
+.about__link:first-child::after {
+    content: "/";
+}
+
+.about__img {
+    position: absolute;
+    bottom: 100px;
+    z-index: -1;
+    max-width: 600px;
+    pointer-events: none;
+}
+
+.about__img_left {
+    left: -45%;
+    transition: left 0.5s ease-out;
+}
+
+.about__title {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.about__img_right {
+    right: -50%;
+    transform: rotate(-50deg);
+}
+
+.about__small-title {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #43FFD2;
+    font-family: Cormorant;
+}
+
+.about__small-title::after {
+    content: "";
+    display: none;
+    width: 100px;
+    height: 1px;
+    background-color: #43FFD2;
+}
+
+.about__box {
+    max-width: 850px;
+    margin-left: auto;
+    padding: 40px 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about__text {}
+
+.about__text:first-child {
+    margin-bottom: 20px;
+}
+
+
+@media(min-width:768px) {
+    .about__img_left {
+        left: -20%;
+    }
+
+    .about__img_right {
+        right: -20%;
+    }
+
+    .about__small-title::after {
+        display: block;
+    }
+}
+
+/* about end *
+
+/* guarantees start */
+
+.guarantees {
+    padding-bottom: 10%;
+}
+
+.guarantees__container {}
+
+.guarantees__title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #43FFD2;
+    font-family: Cormorant;
+}
+
+.guarantees__text {
+    max-width: 825px;
+}
+
+
+/* guarantees end */
+
+/* bouquets start */
+
+.bouquets {
+    padding-bottom: 15%;
+}
+
+.bouquets__container {}
+
+.bouquets__title {
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #43FFD2;
+    font-family: Cormorant;
+}
+
+.bouquets__list {
+    max-width: fit-content;
+    margin: 0;
+    margin-bottom: 12%;
+    margin-left: auto;
+}
+
+.bouquets__data {}
+
+.bouquets__text {}
+
+.bouquets__data .bouquets__text::before {
+    content: "\2022";
+    font-size: 30px;
+    vertical-align: sub;
+}
+
+.bouquets__bottom-box {}
+
+.bouquets__bottom-box .bouquets__text:first-child {
+    max-width: 780px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-family: Cormorant;
+    line-height: 55px;
+}
+
+.bouquets__bottom-box .bouquets__text:last-child {
+    max-width: 450px;
+}
+
+/* bouquets end */

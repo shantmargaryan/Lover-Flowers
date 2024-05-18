@@ -1,0 +1,338 @@
+.catalog {
+    position: relative;
+    isolation: isolate;
+    padding-top: 7rem;
+    padding-bottom: 5%;
+}
+
+.catalog__container {}
+
+.catalog__img {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    transition: transform 0.5s ease-out, right 0.5s ease-out, left 0.5s ease-out;
+}
+
+.catalog__img_top {
+    left: -50%;
+}
+
+.catalog__img_bottom {
+    transform: matrix(-1, 0, 0, 1, 0, 0) translateX(-30%);
+}
+
+.catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.catalog__content {}
+
+.catalog__contact {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.catalog__socials {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog__request {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #43FFD2;
+}
+
+.catalog__request-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.catalog__title {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+
+.catalog__title-span {
+    padding-left: 90px;
+}
+
+.catalog__text {}
+
+.catalog__accordion {}
+
+.accordion__item {}
+
+.accordion {}
+
+.accordion__item {}
+
+.accordion__item:last-child {
+    margin-bottom: 50px;
+}
+
+.accordion__button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D978AC;
+    text-decoration: underline;
+    transition: color 0.5s ease-out;
+}
+
+.accordion__button_active {
+    color: #43FFD2;
+}
+
+.accordion__button_active .accordion__icon {
+    fill: #43FFD2;
+    transform: rotate(180deg);
+}
+
+.accordion__icon {
+    width: 30px;
+    height: 30px;
+    fill: #D978AC;
+    transition: fill 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.accordion__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 30px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.accordion__chackbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.accordion__title {
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    color: #43FFD2;
+}
+
+.accordion__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    font-family: Oswald;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.accordion__lable_bottom:last-child {
+    margin-bottom: 20px;
+}
+
+.accordion__checkbox-input {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 0.5px solid #fff;
+    transition: background-color 0.5s;
+}
+
+.accordion__checkbox-input:checked {
+    background-color: #43FFD2;
+}
+
+.accordion__ranges {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion__range[type="range"] {
+    appearance: none;
+    margin-bottom: 10px;
+    accent-color: #43FFD2;
+    cursor: pointer;
+}
+
+.accordion__range[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-30%);
+    border-radius: 50%;
+    background-color: #43FFD2;
+}
+
+.accordion__range[type="range"]::-webkit-slider-runnable-track {
+    appearance: none;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.accordion__range[type="range"]::-webkit-range-track {
+    appearance: none;
+    background-color: #43FFD2;
+}
+
+.accordion__price-range {
+    margin-bottom: 20px;
+    font-family: Oswald;
+    font-weight: 300;
+}
+
+.accordion__price {}
+
+.accordion__count {
+
+    &::after {
+        content: "-";
+    }
+}
+
+.accordion__currency {}
+
+.accordion__reset {
+    padding: 15px 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.accordion__buttons-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.accordion__btn {
+    padding: 10px 15px;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    transition: color 0.4s ease-out,
+        background-color 0.4s ease-out,
+        scale 0.4s ease-out;
+}
+
+.accordion__btn:hover {
+    color: #040A0A;
+    background-color: #43FFD2;
+}
+
+.catalog__list-wrapper {}
+
+.popular__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.popular__item {
+    position: relative;
+}
+
+.subtitle {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 50%;
+    color: #040A0A;
+}
+
+.popular__new {
+    background-color: #D978AC;
+}
+
+.popular__sale {
+    background-color: #31985A;
+}
+
+.popular__img {
+    margin-bottom: 10px;
+}
+
+.popular__small-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.popular__price {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.popular__cart-button {
+    padding: 15px 70px;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+
+.catalog__show-more {
+    display: block;
+    margin: 30px auto 0;
+    padding: 15px 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media(min-width:567px) {
+    .catalog__img_bottom {
+        right: -60%;
+    }
+}
+
+@media(min-width:992px) {
+    .catalog__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 550px;
+    }
+
+    .catalog__content {
+        flex-basis: 70%;
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .catalog__contact {
+        justify-content: space-evenly;
+        min-height: inherit;
+    }
+
+    .catalog__socials {
+        flex-direction: column;
+    }
+}

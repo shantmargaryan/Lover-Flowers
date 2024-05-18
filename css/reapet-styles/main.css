@@ -1,0 +1,22 @@
+.main {
+	min-height: 100%;
+	overflow: hidden;
+	transition: padding 0.5s ease-out;
+}
+
+.main__overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 1;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.main__overlay_active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
