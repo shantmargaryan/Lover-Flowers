@@ -1,6 +1,6 @@
 @font-face {
     font-family: Cormorant;
-    src: url(../../fonts/Cormorant-Regular.ttf);
+ src: url(/fonts/Cormorant-Regular.woff);
     display: swap;
     font-weight: 400;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Cormorant;
-    src: url(../../fonts/Cormorant-Light.ttf);
+    src: url(/fonts/Cormorant-Light.woff);
     display: swap;
     font-weight: 300;
     font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Oswald;
-    src: url(../../fonts/Oswald-Bold.ttf);
+    src: url(/fonts/Oswald-Bold.woff);
     display: swap;
     font-weight: 700;
     font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: Oswald;
-    src: url(../../fonts/Oswald-Regular.ttf);
+    src: url(/fonts/Oswald-Regular.woff);
     display: swap;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: Oswald;
-    src: url(../../fonts/Oswald-Light.ttf);
+    src: url(/fonts/Oswald-Light.woff);
     display: swap;
     font-weight: 300;
     font-style: normal;
